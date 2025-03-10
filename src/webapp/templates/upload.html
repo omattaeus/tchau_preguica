@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Enviar Comprovante</title>
+</head>
+<body>
+    <h1>Envie seu Comprovante</h1>
+    <form action="{{ url_for('upload_comprobante') }}" method="POST" enctype="multipart/form-data">
+        <input type="file" name="file">
+        <button type="submit">Enviar</button>
+    </form>
+    <a href="{{ url_for('index') }}">Voltar para a lista</a>
+</body>
+</html>

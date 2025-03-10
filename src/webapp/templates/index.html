@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Painel de Comprovantes</title>
+</head>
+<body>
+    <h1>Comprovantes Recebidos</h1>
+    <ul>
+        {% for receipt in receipts %}
+            <li>{{ receipt }}</li>
+        {% endfor %}
+    </ul>
+    <a href="{{ url_for('upload_comprobante') }}">Enviar Comprovante</a>
+</body>
+</html>
